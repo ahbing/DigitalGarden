@@ -21,6 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - name: duplicate config.edc for public version
+        run: mv config.public.edn config.edn && mv custom.public.css custom.css
       - name: Logseq Publish 🚩
         uses: pengx17/logseq-publish@main
       - name: add a nojekyll file
