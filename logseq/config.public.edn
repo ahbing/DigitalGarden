@@ -421,6 +421,6 @@
 ;; =====================
 ;; Public version config
 ;; =====================
- :default-home {:page "Home"}
+ :default-home {:page "Readme"}
  ;; Favorites to list on the left sidebar
  :favorites []
