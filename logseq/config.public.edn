@@ -138,7 +138,6 @@
  ;; :default-home {:page "Jun 3rd, 2021"}
  ;; 3. Set "home" as the home page and display multiple pages in the right sidebar:
  ;; :default-home {:page "home", :sidebar ["Page A" "Page B"]}
- :default-home {:page "Contents"}
  ;; Set the default location for storing notes.
  ;; Default value: "pages"
  ;; :pages-directory "pages"
@@ -296,9 +295,6 @@
  ;;  :excluded-pages? false  ; Default value: false
  ;;  :journal?        false} ; Default value: false
 
- ;; Favorites to list on the left sidebar
- :favorites []
-
  ;; Set flashcards interval.
  ;; Expected value:
  ;; - Float between 0 and 1
@@ -420,3 +416,11 @@
  :publishing/all-pages-public? true
  :feature/enable-whiteboards? false
  :feature/enable-flashcards? false}
+
+
+;; =====================
+;; Public version config
+;; =====================
+ :default-home {:page "Home"}
+ ;; Favorites to list on the left sidebar
+ :favorites []
