@@ -1,0 +1,86 @@
+
+<script>
+  const container = document.getElementById('main-content-container');
+  container.style['flex-wrap'] = 'wrap';
+  container.firstChild.style['flex-basis'] = '100%';
+  const element = document.createElement('div');
+  element.classList.add('giscus');
+  container.appendChild(element);
+</script>
+
+<script src="https://giscus.app/client.js"
+        data-repo="ahbing/knowledge-garden"
+        data-repo-id="R_kgDOLNA9jg"
+        data-category="General"
+        data-category-id="DIC_kwDOLNA9js4Cc6ca"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+<script>
+  history.pushState = (f => function pushState() {
+      const ret = f.apply(this, arguments);
+      window.dispatchEvent(new Event('pushstate'));
+      window.dispatchEvent(new Event('locationchange'));
+      return ret;
+  })(history.pushState);
+  history.replaceState = (f => function replaceState() {
+      const ret = f.apply(this, arguments);
+      window.dispatchEvent(new Event('replacestate'));
+      window.dispatchEvent(new Event('locationchange'));
+      return ret;
+  })(history.replaceState);
+  window.addEventListener('popstate', () => {
+      window.dispatchEvent(new Event('locationchange'))
+  });
+  window.addEventListener('locationchange', function() {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      const title = decodeURIComponent(location.hash.split('/').slice(-1)[0]);
+      console.debug("location change to:", title, iframe);
+      if (!iframe || !title) return;
+      iframe.contentWindow.postMessage({
+          giscus: {
+              setConfig: {
+                  term: title
+              }
+          }
+      }, 'https://giscus.app');
+      console.debug("try refresh giscus:", title);
+  }, false);
+</script>
+<!-- 评论系统主题随logseq变化 -->
+<script>
+  localStorage.setItem = (f => function setItem() {
+      const ret = f.apply(this, arguments);
+      if (arguments.length > 1 && arguments[0] == 'theme') {
+          window.dispatchEvent(new Event('themechange'));
+      }
+      return ret;
+  })(localStorage.setItem);
+
+  window.addEventListener('themechange', () => {
+      const logseqTheme = JSON.parse(window.localStorage.getItem('theme'));
+      const lsq2gisThemeMap = {
+          'dark': 'dark_dimmed',
+          'white': 'light'
+      };
+      const giscusTheme = lsq2gisThemeMap[logseqTheme];
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe && giscusTheme) {
+          iframe.contentWindow.postMessage({
+              giscus: {
+                  setConfig: {
+                      theme: giscusTheme
+                  }
+              }
+          }, 'https://giscus.app');
+          console.debug("try switch giscus theme:", giscusTheme);
+      }
+  });
+</script>

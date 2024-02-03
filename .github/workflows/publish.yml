@@ -23,8 +23,13 @@ jobs:
       - uses: actions/checkout@v3
       - name: duplicate config.edc for public version
         run: mv logseq/config.public.edn logseq/config.edn && mv logseq/custom.public.css logseq/custom.css
+        
       - name: Logseq Publish 🚩
         uses: pengx17/logseq-publish@main
+
+      - name: Inject Giscus Script
+        run: sed -i "s@</body>@$( cat logseq/giscus.html | tr '\n' ' ' | sed 's@&@\\&@g' )</body>@"  www/index.html
+
       - name: add a nojekyll file
         run: touch $GITHUB_WORKSPACE/www/.nojekyll
       - name: Deploy 🚀
