@@ -415,12 +415,15 @@
  :file/name-format :triple-lowbar
  :publishing/all-pages-public? true
  :feature/enable-whiteboards? false
- :feature/enable-flashcards? false}
+ :feature/enable-flashcards? false
 
-
-;; =====================
-;; Public version config
-;; =====================
+ ;; =====================
+ ;; Public version config
+ ;; =====================
  :default-home {:page "README"}
  ;; Favorites to list on the left sidebar
  :favorites []
+ 
+}
+
+
