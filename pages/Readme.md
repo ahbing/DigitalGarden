@@ -1,3 +1,0 @@
-- Hello World
-- [My Blog](https://ahbing.me)
--
