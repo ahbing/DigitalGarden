@@ -1,17 +1,1 @@
-- 你好，欢迎造访我的 [数字花园]((https://garden.ahbing.me))
-- 这是我保存所有灵感、笔记与思考的地方
-- 我们也许永远无法在这星球上面对面的交流
-- 所以，当你对我的观点产生任何想法时，请畅抒己见
-- 我对此十分感激
--
-- 当我们脱离了肉身，我们的思想产生了连结
--
----
-- Hello and Welcome to my [digital garden](https://garden.ahbing.me)
-- This is where I keep all my inspirations, notes and thoughts
-- We may never cross paths on this planet
-- So, When you have any thoughts on what i've been thinking
-- Please leave a comment
-- I'd appreciate it
--
-- When we're out of our bodies, we have meeting of the minds
+Hello and Welcome to my [digital garden](https://garden.ahbing.me)
