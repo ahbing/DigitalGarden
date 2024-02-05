@@ -321,7 +321,7 @@
  ;; By default, property value separated by commas will not be treated as
  ;; page references. You can add properties to enable it.
  ;; Example usage:
- ;; :property/separated-by-commas #{:alias :tags}
+ :property/separated-by-commas #{:alias :tags}
 
  ;; Properties that are ignored when parsing property values for references
  ;; Example usage:

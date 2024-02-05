@@ -1,0 +1,25 @@
+### Long Term
+	- 一个长远的目标 Goal，细化成一些 Key Results，再创建 [[Projects]]
+	- 基于 Projects 给每个 Project 设定起始时间
+	-
+- ### Short Term
+	- #### Weekness Tasks
+		- 回顾整体 Project 和各个 Task 的进度，
+		- 制定本周计划
+			- 罗列所有 Tasks
+			- 添加 Task 三种属性：`优先级` `重要性` `必要性`
+			- 每项任务加上时间周期（尽可能 **细化** 至 Time Block）
+			- 删除`不必要` `重要性低` 的 Task
+	- #### Daily Tasks
+		- Morning Review (5-15 mins)
+			- 浏览今天的 Tasks
+			- 重新考虑今天各个任务的三要素 `优先级` `重要性` `必要性`
+			- 再次 **细化** 各个 Task 的 Time Block
+			- 清晰一天的思路，充满动力
+		- Night Review
+			- 回顾并标记当天的 Task 的完成情况，成就感！
+			- 未完成的 Task 帮助明确第二天的计划
+			- 思考每项 Task 的意义
+				- 对 Project 的价值？
+				- 其 `重要性` `优先级` 为何？
+-
