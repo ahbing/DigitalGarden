@@ -420,7 +420,7 @@
  ;; =====================
  ;; Public version config
  ;; =====================
- :default-home {:page "README"}
+ :default-home {:page "WELCOME"}
  ;; Favorites to list on the left sidebar
  :favorites []
  
