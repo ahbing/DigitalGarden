@@ -422,7 +422,7 @@
  ;; =====================
  :default-home {:page "WELCOME"}
  ;; Favorites to list on the left sidebar
- :favorites []
+ :favorites ["WELCOME" "Contents"]
  
 }
 
