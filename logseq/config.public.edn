@@ -420,9 +420,9 @@
  ;; =====================
  ;; Public version config
  ;; =====================
- :default-home {:page "WELCOME"}
+ :default-home {:page "Welcome"}
  ;; Favorites to list on the left sidebar
- :favorites ["WELCOME" "Contents"]
+ :favorites ["Welcome" "Contents"]
  
 }
 
