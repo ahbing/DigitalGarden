@@ -3,7 +3,7 @@
 	- 基于 Projects 给每个 Project 设定起始时间
 	-
 - ### Short Term
-	- #### Weekness Tasks
+	- #### Week Tasks
 		- 回顾整体 Project 和各个 Task 的进度，
 		- 制定本周计划
 			- 罗列所有 Tasks

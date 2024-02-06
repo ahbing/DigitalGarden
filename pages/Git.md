@@ -1,8 +1,9 @@
+-
 - Git Reset  Checkout  and Revert
-  title:: Git
 	- [DOCUEMNT](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 	- Reset
-	- ![Git Status](/Users/ahbing/Documents/knowledge-garden/assets/Screenshot_2024-02-03_at_8.03.43 PM_1706961827668_0.png)
+	- ![Git Status](../assets/Screenshot_2024-02-03_at_8.03.43 PM_1706961827668_0.png)
+	-
 	- Checkout
 	- Revert
 -
@@ -64,6 +65,6 @@
 	  # OR re-write the entire feature branch
 	  git merge-base feature main
 	  ```
-	- ![Screenshot 2024-02-03 at 10.36.09 PM.png](../assets/Screenshot_2024-02-03_at_10.36.09 PM_1706970978023_0.png)
+	- ![git rebase](../assets/Screenshot_2024-02-03_at_10.36.09 PM_1706970978023_0.png)
 	-
 -
